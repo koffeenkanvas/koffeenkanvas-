@@ -1,43 +1,41 @@
 import React from 'react';
 import './Gallery.css';
-import coffeeLogo from '../assets/coffee-logo.png';
+import artWine from '../assets/art-wine.jpg';
+import artCat from '../assets/art-cat.jpg';
+import artWater from '../assets/art-water.jpg';
+import artButterfly from '../assets/art-butterfly.jpg';
+import artCello from '../assets/art-cello.jpg';
 
 const artworks = [
     {
         id: 1,
-        title: "Morning Brew",
-        description: "A warm cup to start the day. Watercolor on paper.",
-        image: coffeeLogo, // Using the logo as one piece
+        title: "Vintage Pour",
+        description: "The elegance of red wine in motion.",
+        image: artWine,
     },
     {
         id: 2,
-        title: "Abstract Dreams",
-        description: "Colors of the mind. Oil on canvas.",
-        image: "https://picsum.photos/id/1015/400/600",
+        title: "Piano Nap",
+        description: "Soft melodies and softer dreams.",
+        image: artCat,
     },
     {
         id: 3,
-        title: "Urban Sketch",
-        description: "City life in charcoal.",
-        image: "https://picsum.photos/id/103/400/400",
+        title: "Fluid Thoughts",
+        description: "Submerged in the flow of creativity.",
+        image: artWater,
     },
     {
         id: 4,
-        title: "Nature's Whisper",
-        description: "Forest scene in acrylics.",
-        image: "https://picsum.photos/id/104/400/500",
+        title: "Butterfly Touch",
+        description: "A delicate moment of connection.",
+        image: artButterfly,
     },
     {
         id: 5,
-        title: "Cafe Corner",
-        description: "The favorite spot. Digital illustration.",
-        image: "https://picsum.photos/id/1060/400/400",
-    },
-    {
-        id: 6,
-        title: "Midnight Oil",
-        description: "Working late. Mixed media.",
-        image: "https://picsum.photos/id/1081/400/600",
+        title: "Melody in Color",
+        description: "Music painted on the canvas of life.",
+        image: artCello,
     },
 ];
 
