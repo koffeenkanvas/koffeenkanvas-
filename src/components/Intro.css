@@ -11,7 +11,6 @@
     z-index: 1000;
     transition: opacity 1s ease-in-out;
     padding: 1rem;
-    /* Add padding to prevent edge touching */
 }
 
 .intro-container.fade-out {
@@ -22,12 +21,36 @@
 .brush-stroke {
     position: relative;
     padding: 2rem 1rem;
-    /* Reduced horizontal padding */
     background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Paint_brush_stroke.svg/1200px-Paint_brush_stroke.svg.png') no-repeat center center;
+    background-size: contain;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-to {
-    opacity: 1;
-    transform: translateY(0);
+.intro-title {
+    font-size: clamp(2.5rem, 10vw, 5rem);
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: var(--text-color);
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards 0.5s;
+    text-align: center;
+    width: 100%;
+    overflow-wrap: break-word;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
