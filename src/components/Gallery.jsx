@@ -36,15 +36,29 @@ const artworks = [
         title: "Melody in Color",
         description: "Music painted on the canvas of life.",
         image: artCello,
-                            < div className = "art-back" >
+    },
+];
+
+const Gallery = () => {
+    return (
+        <section className="gallery-section" id="gallery">
+            <h2 className="section-title">Things I’ve Been Creating</h2>
+            <div className="gallery-wall">
+                {artworks.map((art) => (
+                    <div key={art.id} className="art-frame">
+                        <div className="art-content">
+                            <div className="art-front">
+                                <img src={art.image} alt={art.title} />
+                            </div>
+                            <div className="art-back">
                                 <h3>{art.title}</h3>
                                 <p>{art.description}</p>
-                            </div >
-                        </div >
-                    </div >
+                            </div>
+                        </div>
+                    </div>
                 ))}
-            </div >
-        </section >
+            </div>
+        </section>
     );
 };
 
