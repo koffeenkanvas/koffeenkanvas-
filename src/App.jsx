@@ -19,7 +19,7 @@ function App() {
         <main>
           <section className="hero">
             <div className="hero-content">
-              <h2>Welcome to my Studio</h2>
+              <h2>A Little Canvas of My Art</h2>
               <p>Where coffee meets creativity.</p>
             </div>
           </section>
@@ -30,8 +30,10 @@ function App() {
             <div className="about-container">
               <h2>About Me</h2>
               <p>
-                Hi, I'm the artist behind KoffeenKanvas. I believe in the magic of a fresh brew and a blank canvas.
-                My work is inspired by the cozy moments of life, the warmth of coffee shops, and the stories found in everyday objects.
+                Hi, I’m AJ.
+                <br /><br />
+                I’m still learning to paint, and this space is where I put the little things I’m trying and exploring.
+                Nothing perfect. Just small moments, gentle colors, and the joy of figuring things out.
               </p>
             </div>
           </section>
