@@ -20,10 +20,10 @@
 body {
   font-family: 'Lato', sans-serif;
   /* Use the uploaded pattern as the main background */
-  background-image: url('/src/assets/bg-pattern.png');
+  background-image: url('./assets/bg-pattern.png');
   background-repeat: repeat;
-  background-size: 400px;
-  /* Adjust size as needed */
+  background-size: 500px;
+  /* Slightly larger for better visibility */
   background-attachment: fixed;
   /* Parallax-like effect */
   color: var(--text-color);
@@ -32,7 +32,7 @@ body {
   position: relative;
 }
 
-/* Overlay to ensure text readability if pattern is busy */
+/* Overlay to ensure text readability but let pattern show */
 body::after {
   content: "";
   position: fixed;
@@ -40,8 +40,8 @@ body::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(253, 251, 247, 0.85);
-  /* Cream overlay */
+  background-color: rgba(253, 251, 247, 0.6);
+  /* Reduced opacity from 0.85 to 0.6 */
   z-index: -1;
   pointer-events: none;
 }
