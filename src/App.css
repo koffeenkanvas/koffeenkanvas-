@@ -48,7 +48,7 @@
 .hero {
   height: 70vh;
   /* Removed overlay for brighter, HD look */
-  background: url('./assets/hero-bg.png') no-repeat center center/cover;
+  background: url('./assets/hero-bg-new.jpg') no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
