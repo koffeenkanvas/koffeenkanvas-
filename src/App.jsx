@@ -12,6 +12,8 @@ function App() {
       {!introComplete && <Intro onComplete={() => setIntroComplete(true)} />}
 
       <div className={`main-content ${introComplete ? 'visible' : ''}`}>
+        <div className="floral-decoration top-right"></div>
+        <div className="floral-decoration bottom-left"></div>
         <Header />
 
         <main>

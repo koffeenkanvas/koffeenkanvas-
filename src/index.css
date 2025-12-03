@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
-  --bg-color: #FDFBF7;
-  --text-color: #2C1A11;
-  --accent-color: #C6A992;
-  --highlight-color: #D4A373;
-  --frame-color: #5D4037;
-  --shadow-soft: 0 4px 20px rgba(44, 26, 17, 0.08);
-  --shadow-hover: 0 10px 30px rgba(44, 26, 17, 0.15);
+  --bg-color: #F9F5F0;
+  /* Slightly warmer cream */
+  --text-color: #3E2723;
+  --accent-color: #D7CCC8;
+  --highlight-color: #A1887F;
+  --frame-color: #4E342E;
+  --shadow-soft: 0 10px 30px -10px rgba(62, 39, 35, 0.15);
+  --shadow-hover: 0 20px 40px -10px rgba(62, 39, 35, 0.25);
 }
 
 * {
@@ -20,39 +21,53 @@ body {
   font-family: 'Lato', sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
-  line-height: 1.6;
+  line-height: 1.8;
   overflow-x: hidden;
+  position: relative;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Dancing Script', cursive;
+/* Grain Texture Overlay */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.4;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.1'/%3E%3C/svg%3E");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Playfair Display', serif;
+  /* More editorial/professional than Dancing Script for headers */
   font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Keep Dancing Script for specific accents */
+.handwritten {
+  font-family: 'Dancing Script', cursive;
 }
 
 a {
   text-decoration: none;
   color: inherit;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 ul {
   list-style: none;
 }
 
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--bg-color);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--accent-color);
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--highlight-color);
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
 }
