@@ -37,6 +37,22 @@ function App() {
               </p>
             </div>
           </section>
+
+          <section id="contact" className="contact-section" style={{ textAlign: 'center', padding: '4rem 2rem' }}>
+            <h2>Get in Touch</h2>
+            <div className="contact-links" style={{ fontSize: '1.2rem', marginTop: '2rem' }}>
+              <p style={{ marginBottom: '1rem' }}>
+                <a href="mailto:KOFFEENKANVAS@gmail.com" style={{ textDecoration: 'none', color: 'var(--text-color)' }}>
+                  💌 KOFFEENKANVAS@gmail.com
+                </a>
+              </p>
+              <p>
+                <a href="https://instagram.com/koffeenkanvas" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'var(--text-color)' }}>
+                  📸 @koffeenkanvas
+                </a>
+              </p>
+            </div>
+          </section>
         </main>
 
         <footer className="site-footer">

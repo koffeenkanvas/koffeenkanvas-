@@ -47,7 +47,8 @@
 
 .hero {
   height: 70vh;
-  background: linear-gradient(rgba(249, 245, 240, 0.4), rgba(249, 245, 240, 0.2)), url('./assets/hero-bg.png') no-repeat center center/cover;
+  /* Removed overlay for brighter, HD look */
+  background: url('./assets/hero-bg.png') no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
