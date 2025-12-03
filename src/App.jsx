@@ -3,6 +3,7 @@ import Intro from './components/Intro';
 import Header from './components/Header';
 import Gallery from './components/Gallery';
 import './App.css';
+import instaLogo from './assets/instagram-logo.png';
 
 function App() {
   const [introComplete, setIntroComplete] = useState(false);
@@ -46,9 +47,9 @@ function App() {
                   💌 KOFFEENKANVAS@gmail.com
                 </a>
               </p>
-              <p>
-                <a href="https://instagram.com/koffeenkanvas" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'var(--text-color)' }}>
-                  📸 @koffeenkanvas
+              <p style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
+                <a href="https://instagram.com/koffeenkanvas" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'var(--text-color)', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <img src={instaLogo} alt="Instagram" style={{ width: '24px', height: '24px' }} /> @koffeenkanvas
                 </a>
               </p>
             </div>

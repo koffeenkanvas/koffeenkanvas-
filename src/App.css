@@ -59,12 +59,18 @@
 }
 
 .hero-content {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.4);
+  /* More transparent */
   padding: 3rem;
-  border: 1px solid var(--accent-color);
-  backdrop-filter: blur(5px);
+  border-radius: 16px;
+  /* Softer corners */
+  backdrop-filter: blur(8px);
+  /* Stronger blur for glass effect */
   max-width: 800px;
-  box-shadow: var(--shadow-soft);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+  /* Softer, modern shadow */
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  /* Subtle border */
 }
 
 .hero-content h2 {
