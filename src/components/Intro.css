@@ -10,6 +10,8 @@
     align-items: center;
     z-index: 1000;
     transition: opacity 1s ease-in-out;
+    padding: 1rem;
+    /* Add padding to prevent edge touching */
 }
 
 .intro-container.fade-out {
@@ -19,20 +21,27 @@
 
 .brush-stroke {
     position: relative;
-    padding: 2rem 4rem;
+    padding: 2rem 1rem;
+    /* Reduced horizontal padding */
     background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Paint_brush_stroke.svg/1200px-Paint_brush_stroke.svg.png') no-repeat center center;
     background-size: contain;
-    /* Using a placeholder brush stroke image or CSS shape */
-    /* For a pure CSS approach, we can use a pseudo element */
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .intro-title {
-    font-size: 5rem;
+    /* Responsive font size: minimum 2.5rem, preferred 10% of viewport width, max 5rem */
+    font-size: clamp(2.5rem, 10vw, 5rem);
     color: var(--text-color);
     position: relative;
     z-index: 1;
     opacity: 0;
     animation: fadeInUp 1.5s ease-out forwards 0.5s;
+    text-align: center;
+    width: 100%;
+    /* Ensure text doesn't overflow */
+    overflow-wrap: break-word;
 }
 
 @keyframes fadeInUp {
