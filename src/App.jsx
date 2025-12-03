@@ -19,8 +19,8 @@ function App() {
         <main>
           <section className="hero">
             <div className="hero-content">
-              <h2>A Little Canvas of My Art</h2>
-              <p>Where coffee meets creativity.</p>
+              <h2>My Cozy Kanvas</h2>
+              <p>Created with love</p>
             </div>
           </section>
 
